@@ -1,0 +1,91 @@
+{
+  "profile": {
+    "name": "FOUAD AL-SHAMI",
+    "role": "BACKEND DEVELOPER",
+    "headline": "I build what works behind the scenes.",
+    "intro": "Computer Systems Engineering student | Gaza, Palestine",
+    "about": "I\u2019m a Computer Systems Engineering student at Al-Azhar University \u2013 Gaza, focused on backend development. I enjoy understanding how a product should work, structuring its data and connecting the services behind it.\n\nThrough RIVO, I have worked on a digital storefront with customer accounts, catalog management, orders and supplier integrations. In Athar, my technical role starts with local needs and requirements, and continues into platform development. My graduation project, Vaxora, is currently focused on analyzing a digital child vaccination record for the realities families face in Gaza.\n\nI value practical systems, clear responsibilities and collaboration. I\u2019m continuing to develop my engineering skills through projects and team experience.",
+    "portrait": "/fouad-approved.png",
+    "email": "fouad.adel.2004@gmail.com",
+    "github": "https://github.com/itsfouad1",
+    "linkedin": "",
+    "instagram": "",
+    "cv": "",
+    "overview": "I\u2019m Fouad, a Computer Systems Engineering student at Al-Azhar University \u2013 Gaza. I build backend services and web products, with hands-on work across digital commerce, community platforms and requirements analysis. My projects connect software decisions with the people and workflows they need to support.",
+    "focus": "Backend services \u00b7 API integrations \u00b7 Data modeling \u00b7 Requirements analysis",
+    "calendar": "",
+    "whatsapp": ""
+  },
+  "projects": [
+    {
+      "name": "RIVO",
+      "type": "Digital Store",
+      "detail": "A digital commerce project for game cards and top-ups, combining the customer storefront with an operations dashboard.",
+      "stack": "JavaScript \u00b7 Cloudflare Workers \u00b7 D1 \u00b7 R2 \u00b7 API Integration \u00b7 Authentication",
+      "status": "Built project",
+      "role": "Developed the store and administration workflows: customer accounts, product/category management, orders, supplier configuration and payment integration.",
+      "challenge": "Bring digital products, supplier data and customer orders into one manageable storefront.",
+      "solution": "A customer storefront connected to account and order services, with an admin dashboard for catalog and operational tasks. Supplier data is mapped into the store, and payment notifications update the order workflow.",
+      "decisions": "Cloudflare Workers runs the application, D1 stores structured data and R2 handles file storage. Supplier identifiers and USD prices support catalog mapping and margin calculations. Payment integration includes a signed webhook to verify incoming notifications.",
+      "result": "Implemented storefront and administration features.",
+      "liveUrl": "https://rivo-store.rivo1.workers.dev/",
+      "sourceUrl": "https://github.com/itsfouad1/rivo_store",
+      "flow": "Customer storefront \u2192 Worker services \u2192 D1 records / supplier & payment integrations"
+    },
+    {
+      "name": "ATHAR",
+      "type": "Local Business Platform",
+      "detail": "Helping small businesses in Gaza build a digital presence.",
+      "stack": "Requirements Analysis \u00b7 Platform planning \u00b7 Content workflows",
+      "status": "In progress",
+      "role": "Technical responsibility for needs analysis, requirements and platform development, in coordination with the Athar Youth Team.",
+      "challenge": "Small and home businesses need a clearer way to present their work and reach people in their community.",
+      "solution": "An Arabic-first business directory with stable project pages, search and filtering, direct contact links, owner updates and admin content review. The initial initiative focuses on 30 businesses, with a scope that can later expand across Gaza.",
+      "result": "In progress. Requirements and the platform experience are being developed for the initiative\u2019s initial group of 30 businesses.",
+      "decisions": "The platform acts as a discovery and contact intermediary. Owners manage business content, with changes reviewed by an administrator. The planned assistant has a daily usage limit.",
+      "flow": "Visitor discovery \u2192 Business profile \u2192 Direct contact | Owner updates \u2192 Admin review"
+    },
+    {
+      "name": "VAXORA",
+      "type": "Vaccination Record",
+      "detail": "A graduation project for a digital child vaccination record.",
+      "stack": "Requirements Analysis \u00b7 Healthcare workflows \u00b7 Offline requirements",
+      "status": "Analysis in progress",
+      "role": "Member of a four-student graduation project team, working on the problem definition, analysis and requirements documentation.",
+      "challenge": "Paper vaccination records can be lost during displacement, making follow-up harder for families.",
+      "solution": "A digital child vaccination record where centers document administered doses and health professionals set the next appointment. Families can follow separate read-only records for multiple children, receive reminders and view saved information offline.",
+      "result": "Analysis and requirements documentation. It is not yet a deployed or clinically validated service.",
+      "decisions": "Vaccination confirmation belongs to the administering center. Appointment dates are set by professionals. Basic vaccinations have reminders; additional doses can be displayed without that reminder schedule.",
+      "flow": "Center registration \u2192 Verified vaccination record \u2192 Family read-only view & appointment reminders"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "Cloudflare Workers",
+    "D1 / SQL",
+    "R2 Storage",
+    "Supabase",
+    "API Integration"
+  ],
+  "experiences": [
+    {
+      "organization": "ATHAR YOUTH TEAM",
+      "role": "Technical lead",
+      "period": "Current initiative",
+      "description": "Understanding local business needs, defining requirements and developing the platform.",
+      "location": "Gaza, Palestine",
+      "responsibilities": "Contributed to a needs assessment to understand the challenges facing small and home businesses.\nTranslated the initiative\u2019s goals and participant needs into platform requirements.\nDefined the initial directory experience, business profiles, direct contact options and content review workflow.\nResponsible for the technical development direction of the platform as the initiative progresses.",
+      "stack": "Requirements analysis \u00b7 Platform development \u00b7 Community needs"
+    },
+    {
+      "organization": "CHINGU \u00b7 V62",
+      "role": "Backend developer",
+      "period": "Voyage 62 \u00b7 Team project",
+      "description": "Collaborating on a shared product using Next.js, Supabase and Gemini, with a focus on backend implementation.",
+      "location": "Remote collaboration",
+      "responsibilities": "Worked as a backend developer within a collaborative project team.\nContributed to a product using Next.js, Supabase and Gemini.\nParticipated in shared planning and coordinated backend work with other team members.\nCompleted the voyage project with the team.",
+      "stack": "Next.js \u00b7 Supabase \u00b7 Gemini \u00b7 Team collaboration"
+    }
+  ],
+  "certificates": []
+}
