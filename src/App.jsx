@@ -8,6 +8,7 @@ import {Contact} from './Contact';
 import {Experience,CaseStudies} from './RichContent';
 import {Skills,Process} from './Skills';
 import {ProjectDetail,safeUrl} from './ProjectDetail';
+import {BuyMeCoffee} from './BuyMeCoffee';
 
 export function App() {
   return location.pathname.startsWith("/admin") ? <Admin/> : <Portfolio/>;
@@ -34,5 +35,6 @@ function Portfolio() {
     <Experience items={content.experiences||seed.experiences}/><CaseStudies projects={projects} onProject={setActive}/>
     <section className="skills-section" id="skills"><p className="eyebrow">TOOLS & APPROACH</p><h2>Built with intention.</h2><Skills skills={content.skills} projects={projects} onProject={setActive}/></section>{content.certificates?.length>0&&<section className="certificates-section"><p className="eyebrow">LEARNING & CREDENTIALS</p><h2>Always building my skills.</h2><div className="certificate-grid">{content.certificates.map((c,i)=><article key={i}><small>{c.date}</small><h3>{c.title}</h3><p>{c.issuer}</p>{safeUrl(c.url)&&<a href={safeUrl(c.url)} target="_blank" rel="noreferrer">View credential ↗</a>}</article>)}</div></section>}<Process/><section className="about" id="about"><p className="eyebrow">A LITTLE ABOUT ME</p><h2>Thoughtful systems.<br/><span>Useful outcomes.</span></h2><p>{profile.about}</p><a href="#inquiry" className="text-link" id="contact">Let’s build something useful <span>↗</span></a></section>
     <Contact profile={profile}/><footer><span>FOUAD AL-SHAMI</span><span>BACKEND DEVELOPER · GAZA, PALESTINE</span><div><a href={`mailto:${profile.email}`}>Email</a><a href={safeUrl(profile.github)} target="_blank" rel="noreferrer">GitHub</a></div></footer>
+    <BuyMeCoffee />
   </main>;
 }

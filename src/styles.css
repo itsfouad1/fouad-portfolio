@@ -38,3 +38,59 @@
  .topbar{height:72px}
 }
 @media(max-width:480px){.hero{padding:110px 6% 42px}.hero .identity-card{width:100%;margin-bottom:30px}.hero .identity-photo{max-height:none}.hero h1{font-size:36px;line-height:1.12}.hero .identity-top{gap:8px}.hero .identity-signature{gap:8px;flex-wrap:wrap}}
+
+
+/* Floating Buy Me a Coffee support button */
+.buy-me-coffee{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:20;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:13px 18px;
+  border:1px solid #39cbbd;
+  border-radius:999px;
+  background:#101715;
+  color:#f5f5f5;
+  box-shadow:0 8px 28px #0009;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.2px;
+  transition:transform .22s ease,background .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+.buy-me-coffee svg{
+  width:19px;
+  height:19px;
+  fill:none;
+  stroke:#39cbbd;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  flex:none;
+}
+.buy-me-coffee:hover{
+  transform:translateY(-4px);
+  background:#142521;
+  border-color:#70e2d6;
+  box-shadow:0 12px 32px #000b,0 0 22px #39cbbd22;
+}
+.buy-me-coffee:focus-visible{
+  outline:2px solid #39cbbd;
+  outline-offset:4px;
+}
+@media(max-width:600px){
+  .buy-me-coffee{
+    right:17px;
+    bottom:17px;
+    width:49px;
+    height:49px;
+    padding:0;
+  }
+  .buy-me-coffee span{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .buy-me-coffee{transition:none}
+}
